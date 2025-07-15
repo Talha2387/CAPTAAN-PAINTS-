@@ -1,41 +1,103 @@
-# Prerequisites
-*.d
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile & Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header, section, footer {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .product {
+      background: #fff;
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+<header>
+  <h1>Welcome to My Profile</h1>
+  <p>Your one-stop business & store</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#store">Store</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-# Precompiled Headers
-*.gch
-*.pch
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am a passionate entrepreneur offering services and products that help customers. I specialize in high-quality, affordable solutions tailored to your needs.</p>
+</section>
 
-# Linker files
-*.ilk
+<section id="store">
+  <h2>Online Store</h2>
 
-# Debugger Files
-*.pdb
+  <div class="product">
+    <h3>Product 1: Handmade Wallet</h3>
+    <p>Price: ₹499</p>
+    <button>Contact to Buy</button>
+  </div>
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+  <div class="product">
+    <h3>Product 2: Leather Journal</h3>
+    <p>Price: ₹799</p>
+    <button>Contact to Buy</button>
+  </div>
 
-# Fortran module files
-*.mod
-*.smod
+</section>
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message..." rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-# Executables
-*.exe
-*.out
-*.app
+<footer style="text-align: center; background: #333; color: white;">
+  <p>&copy; 2025 My Business. All rights reserved.</p>
+</footer>
 
-# debug information files
-*.dwo
+</body>
+</html>
